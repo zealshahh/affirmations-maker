@@ -6,7 +6,6 @@ __pycache__/
 # Node.js
 /frontend/node_modules
 /node_modules
-/frontend/dist
 /package-lock.json
 
 # Environment variables
