@@ -13,9 +13,10 @@ export default function App() {
   };
 
   return (
-    <div className="mt-5 mx-auto bg-transparent ">
-      <h1 className=" bg-transparent flex justify-center text-5xl font-bold mb-6 text-center text-green-800">Digital Affirmations</h1>
-
+    
+    <div className="mt-20 mx-auto bg-transparent ">
+      <h1 className=" bg-transparent flex justify-center text-5xl font-bold mb-6 text-center text-cyan-800">Digital Affirmations</h1>
+      <Navbar> </Navbar>
       <AffirmationDisplay ref={displayRef} />
 
       <AddAffirmation onAdded={handleAffirmationAdded} />

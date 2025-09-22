@@ -2,15 +2,22 @@
 
 
 
+body {
+  background-size: cover;
+  margin: 0;
+  height: 100vh;
+}
 
 html, body, #root {
   height: 100%;
-  background-color: #fbcfe8; /* Tailwind pink-100 */
+  background: url("/background.png") no-repeat center center fixed;
+  background-color: #cbeaea; /* Tailwind pink-100 */
   display: flex;              /* make it a flex container */
   justify-content: center;    /* center horizontally */
   align-items: flex-start;    /* optional: start from top vertically, use 'center' for vertical centering */
   padding-top: 20px;          /* optional spacing from top */
   margin: 0;                  /* remove default body margin */
+  font-family: Georgia, serif;
 }
 
 

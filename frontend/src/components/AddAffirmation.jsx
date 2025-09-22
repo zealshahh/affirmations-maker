@@ -27,9 +27,9 @@ export default function AddAffirmation({ onAdded }) {
   };
 
   return (
-    <div className="p-6 border rounded shadow-sm bg-gray-50 mt-4">
+    <div className="bg-blue-50 p-6 border border-blue-900 rounded shadow-sm mt-4">
       <h2 className="text-xl font-semibold mb-2 text-black">
-        Add Your Own Affirmation
+        Add your own affirmation!
       </h2>
       <form onSubmit={handleSubmit} className="flex flex-col gap-3 text-black">
         <input
@@ -37,11 +37,11 @@ export default function AddAffirmation({ onAdded }) {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="Type your affirmation here..."
-          className="border px-3 py-2 rounded"
+          className="border px-3 py-2 rounded border-blue-900 text-cyan-900"
         />
         <button
           type="submit"
-          className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded"
+          className="bg-sky-800 hover:bg-blue-900 active:bg-sky-800 text-white px-4 py-2 rounded"
         >
           Submit
         </button>

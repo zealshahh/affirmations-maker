@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import AffirmationDisplay from "./components/AffirmationDisplay";
-import AddAffirmation from "./components/AddAffirmation";
+import AffirmationDisplay from "../components/AffirmationDisplay";
+import AddAffirmation from "../components/AddAffirmation";
 
 export default function App() {
   const displayRef = useRef();
