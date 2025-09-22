@@ -26,16 +26,28 @@ const AffirmationDisplay = forwardRef((props, ref) => {
   }, []);
 
   return (
-    <div className="p-6 mb-6 border rounded shadow-sm bg-gray-50">
-      <h2 className="text-xl font-semibold mb-2 text-black">Today's Affirmation:</h2>
-      <p className="mb-4 text-gray-700">{affirmation}</p>
-      <button
-        className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded"
-        onClick={getNewAffirmation}
-      >
-        Get Another
-      </button>
-    </div>
+    <div className="flex justify-center mt-10">
+  {/* Affirmation box */}
+  <div className="p-6 w-96 h-56 border rounded shadow-sm bg-gray-50 flex flex-col">
+    {/* Header */}
+    <h2 className="text-xl font-semibold text-black text-center mb-2">
+      Today's Affirmation:
+    </h2>
+
+    {/* Affirmation text */}
+    <p className="text-gray-700 text-center flex-grow overflow-auto">
+      {affirmation}
+    </p>
+
+    {/* Button at the bottom */}
+    <button
+      className="bg-pink-800 hover:bg-blue-600 text-pink-200 px-4 py-2 rounded mt-4"
+      onClick={getNewAffirmation}
+    >
+      Get Another
+    </button>
+  </div>
+</div>
   );
 });
 

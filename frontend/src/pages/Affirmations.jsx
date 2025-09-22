@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import AffirmationDisplay from "./components/AffirmationDisplay";
 import AddAffirmation from "./components/AddAffirmation";
-import Navbar from "./components/Navbar"
 
 export default function App() {
   const displayRef = useRef();
@@ -13,13 +12,12 @@ export default function App() {
   };
 
   return (
-    <div className="mt-5 mx-auto bg-transparent ">
+    <div className=" mx-auto bg-transparent ">
       <h1 className=" bg-transparent flex justify-center text-5xl font-bold mb-6 text-center text-green-800">Digital Affirmations</h1>
 
       <AffirmationDisplay ref={displayRef} />
 
       <AddAffirmation onAdded={handleAffirmationAdded} />
-
     </div>
   );
 }
