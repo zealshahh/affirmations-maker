@@ -11,7 +11,8 @@ affirmations = [
     "You smell super yummy!", 
     "You inspire others to be better!", 
     "You're going to do AWESOME things in life", 
-    "You're a BADDIE"
+    "You're a BADDIE",
+    "Someone is missing you!"
 ]
 
 @app.route('/')
